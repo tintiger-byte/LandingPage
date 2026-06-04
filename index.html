@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Engineer Visionary</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=DM+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- 00. Top Nav Bar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">
+        <span class="logo-icon">
+          <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="16" cy="16" r="4" fill="#3B82F6" />
+            <circle cx="16" cy="16" r="9" stroke="#1e3a5f" stroke-width="2.5" fill="none" />
+            <line x1="16" y1="2" x2="16" y2="7" stroke="#1e3a5f" stroke-width="2.5" stroke-linecap="round" />
+            <line x1="16" y1="25" x2="16" y2="30" stroke="#1e3a5f" stroke-width="2.5" stroke-linecap="round" />
+            <line x1="2" y1="16" x2="7" y2="16" stroke="#1e3a5f" stroke-width="2.5" stroke-linecap="round" />
+            <line x1="25" y1="16" x2="30" y2="16" stroke="#1e3a5f" stroke-width="2.5" stroke-linecap="round" />
+            <line x1="5.5" y1="5.5" x2="9" y2="9" stroke="#1e3a5f" stroke-width="2" stroke-linecap="round" />
+            <line x1="23" y1="23" x2="26.5" y2="26.5" stroke="#1e3a5f" stroke-width="2" stroke-linecap="round" />
+            <line x1="26.5" y1="5.5" x2="23" y2="9" stroke="#1e3a5f" stroke-width="2" stroke-linecap="round" />
+            <line x1="9" y1="23" x2="5.5" y2="26.5" stroke="#1e3a5f" stroke-width="2" stroke-linecap="round" />
+          </svg>
+        </span>
+        <span class="logo-text">Engineer Visionary</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#transformation">Transformation</a></li>
+        <li><a href="#casestudy">Web Renewal</a></li>
+        <li><a href="#projects">SmartMeds</a></li>
+        <li><a href="#projects">BoongeoZzang</a></li>
+      </ul>
+      <a href="#cta" class="btn-connect">Connect</a>
+      <button class="nav-toggle" id="navToggle" aria-label="메뉴 열기">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav-mobile" id="navMobile">
+      <ul>
+        <li><a href="#transformation">Transformation</a></li>
+        <li><a href="#casestudy">Web Renewal</a></li>
+        <li><a href="#projects">SmartMeds</a></li>
+        <li><a href="#projects">BoongeoZzang</a></li>
+        <li><a href="#cta" class="btn-connect-mobile">Connect</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- 01. Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-inner">
+      <div class="hero-text" data-aos>
+        <p class="hero-eyebrow"><span class="eyebrow-line"></span>THE VISIONARY JOURNEY</p>
+        <h1 class="hero-title">40년 엔지니어링 경험,<br>AI Visionary를 만나다</h1>
+        <p class="hero-desc">과거의 기술(엔지니어링)과 현대의 혁신(AI)이 융합하여 서로 맞물려<br>돌아가는 역동적인 변화를 지향하고자 하며, 방사형으로 확장되어<br>나아감으로써 세상에
+          가치 있게 전달되는 모습을 형상화했습니다.</p>
+        <a href="https://tintiger-byte.github.io/myPortfolio/" target="_blank" rel="noopener noreferrer"
+          class="btn-hero">포트폴리오 보기 →</a>
+      </div>
+      <div class="hero-visual" data-aos data-aos-delay="200">
+        <div class="hero-card">
+          <div class="visionary-icon">
+            <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <!-- Center dot -->
+              <circle cx="100" cy="100" r="14" fill="#3B82F6" />
+              <!-- Inner ring -->
+              <circle cx="100" cy="100" r="32" stroke="#1e3a5f" stroke-width="5" fill="none" />
+              <!-- Blue arc highlights -->
+              <path d="M 100 68 A 32 32 0 0 1 132 100" stroke="#3B82F6" stroke-width="5" fill="none"
+                stroke-linecap="round" />
+              <path d="M 100 132 A 32 32 0 0 1 68 100" stroke="#3B82F6" stroke-width="5" fill="none"
+                stroke-linecap="round" />
+              <!-- Outer spokes -->
+              <line x1="100" y1="18" x2="100" y2="38" stroke="#1e3a5f" stroke-width="8" stroke-linecap="round" />
+              <line x1="100" y1="162" x2="100" y2="182" stroke="#1e3a5f" stroke-width="8" stroke-linecap="round" />
+              <line x1="18" y1="100" x2="38" y2="100" stroke="#1e3a5f" stroke-width="8" stroke-linecap="round" />
+              <line x1="162" y1="100" x2="182" y2="100" stroke="#1e3a5f" stroke-width="8" stroke-linecap="round" />
+              <!-- Diagonal spokes -->
+              <line x1="36" y1="36" x2="50" y2="50" stroke="#1e3a5f" stroke-width="7" stroke-linecap="round" />
+              <line x1="150" y1="150" x2="164" y2="164" stroke="#1e3a5f" stroke-width="7" stroke-linecap="round" />
+              <line x1="164" y1="36" x2="150" y2="50" stroke="#1e3a5f" stroke-width="7" stroke-linecap="round" />
+              <line x1="50" y1="150" x2="36" y2="164" stroke="#1e3a5f" stroke-width="7" stroke-linecap="round" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 02. Transformation Section -->
+  <section class="transformation" id="transformation">
+    <div class="section-inner">
+      <div class="section-header" data-aos>
+        <h2>Engineering Transformation</h2>
+        <p>어제의 정밀함으로 내일의 지능을 설계합니다</p>
+      </div>
+      <div class="cards-row">
+        <div class="trans-card" data-aos data-aos-delay="0">
+          <div class="card-icon icon-dark">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <circle cx="12" cy="5" r="2"></circle>
+              <path d="M12 7L7 21"></path>
+              <path d="M12 7l5 14"></path>
+              <path d="M9 16h6"></path>
+            </svg>
+          </div>
+          <h3>과거: 토대</h3>
+          <p>40년 산업 현장 경험.<br>한 치의 오차도 허용하지 않는 정밀함과<br>시스템의 무결성을 최우선으로 하던<br>엔지니어링의 정수입니다.</p>
+        </div>
+        <div class="trans-card" data-aos data-aos-delay="100">
+          <div class="card-icon icon-yellow">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path
+                d="M9.5 3.5A7.5 7.5 0 0 1 17 11c0 1.7-.6 3.2-1.6 4.4-.7.8-1.4 1.7-1.4 2.6V20a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-2c0-.9-.7-1.8-1.4-2.6A7.5 7.5 0 0 1 9.5 3.5z" />
+              <circle cx="12" cy="10" r="2" />
+            </svg>
+          </div>
+          <h3>현재: 진화</h3>
+          <p>AI 전문가로의 완벽한 변신.<br>LLM 아키텍처와 정교한 프롬프트<br>엔지니어링을 통해 물리적 세계를<br>디지털 지능으로 해석합니다.</p>
+        </div>
+        <div class="trans-card" data-aos data-aos-delay="200">
+          <div class="card-icon icon-blue">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path
+                d="M10 2l1.3 4.7a3 3 0 0 0 1.9 1.9L18 10l-4.7 1.3a3 3 0 0 0-1.9 1.9L10 18l-1.3-4.7a3 3 0 0 0-1.9-1.9L2 10l4.7-1.3a3 3 0 0 0 1.9-1.9L10 2z" />
+              <path
+                d="M19 14l.8 2.2a2 2 0 0 0 1.2 1.2L23 18l-2.2.8a2 2 0 0 0-1.2 1.2L19 22l-.8-2.2a2 2 0 0 0-1.2-1.2L15 18l2.2-.8a2 2 0 0 0 1.2-1.2L19 14z" />
+            </svg>
+          </div>
+          <h3>미래: 비전</h3>
+          <p>모든 세대를 위한 혁신.<br>기술의 문턱을 낮추고 인간 중심적인 AI <br>애플리케이션을 통해 세대 간의 격차를<br>해소하는 리더가 됩니다.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 03. Case Study Section -->
+  <section class="casestudy" id="casestudy">
+    <div class="casestudy-inner">
+      <div class="cs-left" data-aos>
+        <p class="cs-eyebrow">ENGINEERING REBIRTH</p>
+        <h2>보성 한국차박물관<br>홈페이지 리뉴얼</h2>
+        <blockquote>"AI를 활용해<br>&nbsp;&nbsp;세대간의 유산과 온기를 잇는 가교"</blockquote>
+        <div class="cs-features">
+          <div class="cs-feature">
+            <div class="cf-icon">
+              <svg viewBox="0 0 24 24" fill="none">
+                <rect x="2" y="3" width="20" height="14" rx="2" stroke="currentColor" stroke-width="2" />
+                <path d="M8 21h8M12 17v4" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+              </svg>
+            </div>
+            <div>
+              <strong>기술적 통합</strong>
+              <p>반응형 웹 기술과 고성능 렌더링을 최적화하여<br>다양한 기기에서 일관된 고품질 사용자 경험을<br>보장합니다.</p>
+            </div>
+          </div>
+          <div class="cs-feature">
+            <div class="cf-icon">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <div>
+              <strong>브랜드 혁신</strong>
+              <p>보성 고유의 색채와 형태를 현대적 그래픽 언어로<br>승화시켜 박물관의 디지털 브랜드 아이덴티티를<br>확립했습니다.</p>
+            </div>
+          </div>
+          <div class="cs-feature">
+            <div class="cf-icon">
+              <svg viewBox="0 0 24 24" fill="none">
+                <rect x="3" y="3" width="7" height="7" rx="1" stroke="currentColor" stroke-width="2" />
+                <rect x="14" y="3" width="7" height="7" rx="1" stroke="currentColor" stroke-width="2" />
+                <rect x="3" y="14" width="7" height="7" rx="1" stroke="currentColor" stroke-width="2" />
+                <rect x="14" y="14" width="7" height="7" rx="1" stroke="currentColor" stroke-width="2" />
+              </svg>
+            </div>
+            <div>
+              <strong>UX/UI 혁신</strong>
+              <p>사용자 중심의 네비게이션 설계와 그리드 시스템<br>도입으로 정보 접근성을 개선하였습니다.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cs-right" data-aos data-aos-delay="150">
+        <div class="cs-img-wrap" style="margin-bottom: 40px;">
+          <div class="cs-label-badge"
+            style="position: absolute; top: 16px; left: 16px; z-index: 10; margin: 0; background: #0f172a; color: #ffffff; border-radius: 2px; padding: 6px 14px; font-size: 11px; letter-spacing: 1px;">
+            LEGACY SYSTEM</div>
+          <a href="https://www.boseong.go.kr/tour/tourist/9tour/tea_museum" target="_blank" rel="noopener noreferrer" class="legacy-link">
+            <img src="img/legacy.png" alt="Legacy System"
+              style="width: 70%; margin: 0 auto; filter: grayscale(100%); display: block; box-shadow: 0 10px 40px rgba(0,0,0,0.3); transition: transform 0.3s ease, filter 0.3s ease;">
+          </a>
+        </div>
+        <div class="cs-img-wrap">
+          <div class="cs-label-badge"
+            style="position: absolute; top: 16px; left: 16px; z-index: 10; margin: 0; background: #1e3a8a; color: #ffffff; border-radius: 2px; padding: 6px 14px; font-size: 11px; letter-spacing: 1px;">
+            VISIONARY RENEWAL</div>
+          <a href="https://notefolio.net/TintigerSong/461342" target="_blank" rel="noopener noreferrer" class="renewal-link">
+            <img src="img/renewal.png" alt="Visionary Renewal"
+              style="width: 100%; display: block; box-shadow: 0 10px 40px rgba(0,0,0,0.3); transition: transform 0.3s ease;">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 04. Projects Grid -->
+  <section class="projects" id="projects">
+    <div class="section-inner">
+      <div class="projects-header" data-aos>
+        <div>
+          <h2>Representative Projects</h2>
+          <p>현실의 문제를 해결하는 AI 솔루션</p>
+        </div>
+        <div class="slider-dots">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card" data-aos data-aos-delay="0">
+          <div class="project-img smartmeds" style="padding: 0;">
+            <a href="https://tintiger-byte.github.io/myApp_ddokddokyak/" target="_blank" rel="noopener noreferrer" style="display: block; width: 100%; height: 100%;">
+              <img src="img/app1.png" alt="SmartMeds App" style="width: 100%; height: 100%; object-fit: cover;">
+            </a>
+          </div>
+          <div class="project-info">
+            <h3>똑똑약 (SmartMeds)</h3>
+            <p>시니어를 위한 AI 기반 복약 관리 솔루션입니다.<br>복잡한 기술을 숨기고 사용자 본질에 집중했습니다.</p>
+            <ul>
+              <li>사진 촬영만으로 즉각적인 알약 인식</li>
+              <li>저인지 시니어를 위한 극도로 단순화된 네비게이션</li>
+              <li>실시간 보호자 연동 및 복약 알림 대시보드</li>
+            </ul>
+          </div>
+        </div>
+        <div class="project-card" data-aos data-aos-delay="100">
+          <div class="project-img boongeo" style="padding: 0;">
+            <a href="https://notefolio.net/TintigerSong/461346" target="_blank" rel="noopener noreferrer" style="display: block; width: 100%; height: 100%;">
+              <img src="img/app2.png" alt="BoongeoZzang App" style="width: 100%; height: 100%; object-fit: cover;">
+            </a>
+          </div>
+          <div class="project-info">
+            <h3>붕어짱 (BoongeoZzang)</h3>
+            <p>전통 길거리 음식을 현대적 시스템과 결합한 이커머스 플랫폼입니다. 문화적 헤리티지를 기술로 보존합니다.</p>
+            <ul>
+              <li>실시간 노점 위치 및 재고 확인 시스템</li>
+              <li>소상공인을 위한 간편 매출 관리 인터페이스</li>
+              <li>전통의 맛을 잇는 현대적 브랜드 로지스틱스</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 05. Call to Action -->
+  <section class="cta" id="cta">
+    <div class="cta-bg-wave">
+      <svg viewBox="0 0 1440 200" preserveAspectRatio="none">
+        <path d="M0,100 C360,160 1080,40 1440,100 L1440,200 L0,200 Z" fill="rgba(59,130,246,0.05)" />
+      </svg>
+    </div>
+    <div class="cta-inner" data-aos>
+      <h2>미래를 맞이할 준비가 되셨나요?</h2>
+      <p>40년의 경험과 AI의 가능성이 만났을 때 생기는 시너지를<br>제안서에서 확인해보세요.<br>귀사의 비즈니스에 엔지니어링급 신뢰를 더해드립니다.</p>
+      <a href="#" class="btn-download" id="downloadBtn">
+        <svg viewBox="0 0 24 24" fill="none" width="20" height="20">
+          <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3" stroke="currentColor"
+            stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+        Presentation Download
+      </a>
+    </div>
+  </section>
+
+  <!-- 06. Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <a href="#" class="footer-logo">
+        <span class="logo-icon small">
+          <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="16" cy="16" r="4" fill="#3B82F6" />
+            <circle cx="16" cy="16" r="9" stroke="rgba(255,255,255,0.5)" stroke-width="2" fill="none" />
+            <line x1="16" y1="2" x2="16" y2="7" stroke="rgba(255,255,255,0.5)" stroke-width="2"
+              stroke-linecap="round" />
+            <line x1="16" y1="25" x2="16" y2="30" stroke="rgba(255,255,255,0.5)" stroke-width="2"
+              stroke-linecap="round" />
+            <line x1="2" y1="16" x2="7" y2="16" stroke="rgba(255,255,255,0.5)" stroke-width="2"
+              stroke-linecap="round" />
+            <line x1="25" y1="16" x2="30" y2="16" stroke="rgba(255,255,255,0.5)" stroke-width="2"
+              stroke-linecap="round" />
+            <line x1="5.5" y1="5.5" x2="9" y2="9" stroke="rgba(255,255,255,0.5)" stroke-width="1.5"
+              stroke-linecap="round" />
+            <line x1="23" y1="23" x2="26.5" y2="26.5" stroke="rgba(255,255,255,0.5)" stroke-width="1.5"
+              stroke-linecap="round" />
+            <line x1="26.5" y1="5.5" x2="23" y2="9" stroke="rgba(255,255,255,0.5)" stroke-width="1.5"
+              stroke-linecap="round" />
+            <line x1="9" y1="23" x2="5.5" y2="26.5" stroke="rgba(255,255,255,0.5)" stroke-width="1.5"
+              stroke-linecap="round" />
+          </svg>
+        </span>
+        <span>Engineer Visionary</span>
+      </a>
+      <p class="footer-copy">© 2026 Veteran Engineer turned AI Visionary. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
