@@ -1,84 +1,106 @@
 <div align="center">
+  
+# 🚀 Engineer Visionary Landing Page
+**40년 엔지니어링 경험과 AI 기술이 융합된 인터랙티브 포트폴리오 웹페이지**
 
-# 🚀 Engineer Visionary : Portfolio Landing Page
-
-**혁신적인 엔지니어링 비전과 다채로운 웹 프로젝트를 담아낸 모던 인터랙티브 랜딩페이지입니다.**
-
-[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](#)
-[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](#)
-[![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)](#)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](#)
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![GitHub Pages](https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&logo=github&logoColor=white)
+![License](https://img.shields.io/badge/license-MIT-blue.svg?style=for-the-badge)
 
 </div>
+
+<br />
 
 ## 📖 About the Project
 
-`Engineer Visionary` 랜딩페이지는 단순한 정보 전달을 넘어, 방문자에게 몰입감 있는 시각적 경험을 제공하기 위해 설계되었습니다. 부드러운 스크롤 애니메이션과 모던한 UI 디자인(Glassmorphism 등)을 활용하여 주요 프로젝트(Web Renewal, SmartMeds, BoongeoZzang)를 효과적으로 쇼케이스합니다.
+**Engineer Visionary Landing Page**는 40년 산업 현장의 정밀한 엔지니어링 경험이 현대의 AI 기술과 어떻게 결합하여 혁신적인 가치를 창출하는지 시각적으로 보여주는 랜딩페이지입니다. 
 
-<div align="center">
-  <!-- 여기에 데모 GIF 또는 이미지를 추가하세요 -->
-  <img src="https://via.placeholder.com/800x400?text=Project+Demo+GIF+or+Screenshot" alt="Project Demo">
-</div>
+단순한 이력서나 포트폴리오를 넘어, "과거의 토대(Engineering)에서 미래의 비전(AI)"으로 나아가는 서사를 인터랙티브한 UI와 부드러운 애니메이션으로 풀어냈습니다. 사용자는 스크롤을 내리며 자연스럽게 엔지니어의 비전과 대표 프로젝트들을 경험할 수 있습니다.
+
+> **시각적 데모 (Demo)**  
+> *(여기에 프로젝트의 부드러운 스크롤이나 애니메이션을 보여주는 GIF를 추가하세요)*  
+> `![Demo GIF](./img/demo.gif)`
+
+<br />
 
 ## ✨ Key Features
 
-- 🎯 **직관적인 포트폴리오 쇼케이스**: SmartMeds, BoongeoZzang 등 주요 프로젝트를 한눈에 파악할 수 있는 그리드 레이아웃.
-- 🎨 **모던 UI 및 Glassmorphism 디자인**: 최신 웹 트렌드를 반영한 반투명 유리 질감 효과와 세련된 다크 테마 적용.
-- ⚡ **경량화 및 최적화**: 무거운 프레임워크 없이 순수 Vanilla HTML/CSS/JS 만으로 구현하여 빠르고 쾌적한 렌더링 성능 제공.
-- 📱 **반응형 웹 디자인 (RWD)**: 데스크탑, 태블릿, 모바일에 이르는 다양한 디바이스 환경에서 완벽하게 동작하는 레이아웃.
+- 🌀 **인터랙티브 애니메이션**: AOS(Animate On Scroll)를 활용한 부드럽고 동적인 스크롤 애니메이션 경험 제공.
+- 📱 **완벽한 반응형 웹 (Responsive Design)**: 데스크탑, 태블릿, 모바일에 이르는 모든 디바이스에서 최적화된 레이아웃과 네비게이션 제공.
+- 🎨 **모던 UI & Glassmorphism**: 세련된 색상 팔레트와 최신 트렌드를 반영한 카드형 레이아웃으로 직관적인 사용자 경험(UX) 극대화.
+- ⚡ **경량화된 아키텍처**: 무거운 프레임워크 없이 순수 Vanilla JS, HTML, CSS만으로 구성되어 매우 빠른 초기 로딩 속도 자랑.
+
+<br />
 
 ## 🚀 Getting Started
 
-프로젝트를 로컬 환경에서 실행하고 테스트하기 위한 가이드입니다.
+이 프로젝트를 로컬 환경에서 실행하고 테스트하기 위한 가이드입니다.
 
 ### Prerequisites (사전 준비물)
-- 최신 버전의 웹 브라우저 (Chrome, Edge, Safari 권장)
-- (선택) 로컬 서버 구동을 위한 `Live Server` 확장 프로그램 (VS Code)
+- 최신 버전의 웹 브라우저 (Chrome, Edge, Safari 등)
+- (선택 사항) 로컬 웹 서버 실행을 위한 Node.js 및 `live-server` 
 
 ### Installation (설치 방법)
 
-1. 저장소를 로컬 머신으로 클론합니다.
-```bash
-git clone https://github.com/tintiger-byte/LandingPage.git
-```
+1. 리포지토리를 로컬에 클론합니다.
+   ```bash
+   git clone https://github.com/tintiger-byte/LandingPage.git
+   ```
+2. 프로젝트 디렉토리로 이동합니다.
+   ```bash
+   cd LandingPage
+   ```
+3. 로컬 서버로 실행하여 확인합니다. (VS Code의 'Live Server' 익스텐션 사용 권장)
+   ```bash
+   # npx가 설치된 경우 아래 명령어로 즉시 실행 가능
+   npx live-server
+   ```
 
-2. 프로젝트 폴더로 이동합니다.
-```bash
-cd LandingPage
-```
-
-3. `index.html` 파일을 더블 클릭하여 브라우저에서 열거나, 로컬 서버를 통해 실행합니다.
-```bash
-# (예시) npx http-server를 사용하는 경우
-npx http-server ./
-```
+<br />
 
 ## 💻 Usage Example
 
-랜딩페이지의 네비게이션 바(Top Nav Bar) 구조는 확장하기 쉽도록 직관적으로 작성되어 있습니다. 새로운 프로젝트 메뉴를 추가하려면 `index.html` 파일의 `<ul class="nav-links">` 안에 리스트 아이템을 추가하기만 하면 됩니다.
+랜딩 페이지의 핵심인 네비게이션 스크롤 이동을 구현하는 간단한 바닐라 자바스크립트 예시입니다. 부드러운 스크롤(`smooth`) 속성을 사용하여 UX를 높였습니다.
 
-```html
-<!-- HTML 스니펫: 네비게이션 항목 추가 예시 -->
-<ul class="nav-links">
-  <li><a href="#transformation">Transformation</a></li>
-  <li><a href="#casestudy">Web Renewal</a></li>
-  <li><a href="#projects">SmartMeds</a></li>
-  <li><a href="#projects">BoongeoZzang</a></li>
-  <!-- 새로운 메뉴 추가 -->
-  <li><a href="#new-project">🌟 New Project</a></li>
-</ul>
+```javascript
+// 스무스 스크롤 네비게이션 구현 예시
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    const targetId = this.getAttribute('href');
+    const targetSection = document.querySelector(targetId);
+    
+    if (targetSection) {
+      window.scrollTo({
+        top: targetSection.offsetTop - 80, // 고정 헤더 높이만큼 보정
+        behavior: 'smooth'
+      });
+    }
+  });
+});
 ```
+
+<br />
 
 ## 🤝 Contribute
 
-오픈소스 생태계는 여러분의 기여로 더욱 발전합니다! 버그 리포트, 기능 제안, 또는 직접 코드를 수정하여 Pull Request(PR)를 남겨주시면 언제든 환영합니다.
+이 프로젝트는 오픈 소스로 열려 있으며, 언제든 여러분의 기여를 환영합니다! 기여하는 방법은 다음과 같습니다:
 
-1. 이 저장소를 Fork 합니다.
-2. 기능 개발을 위한 브랜치를 생성합니다. (`git checkout -b feature/AmazingFeature`)
+1. 프로젝트를 Fork 합니다.
+2. 기능 브랜치를 생성합니다. (`git checkout -b feature/AmazingFeature`)
 3. 변경 사항을 커밋합니다. (`git commit -m 'Add some AmazingFeature'`)
 4. 브랜치에 푸시합니다. (`git push origin feature/AmazingFeature`)
-5. Pull Request를 엽니다.
+5. Pull Request를 오픈해주세요.
+
+<br />
 
 ## 📄 License
 
-이 프로젝트는 **MIT License** 하에 배포됩니다. 자세한 내용은 `LICENSE` 파일을 참조하세요.
+이 프로젝트는 **MIT License**에 따라 배포됩니다. 자세한 내용은 `LICENSE` 파일을 참고해주세요.
+
+---
+<div align="center">
+  <b>Engineer Visionary</b> — 어제의 정밀함으로 내일의 지능을 설계합니다.
+</div>
