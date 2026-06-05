@@ -112,35 +112,34 @@
 })();
 
 // ──────────────────────────────────────────────
-// 5. CTA Download button: ripple effect
+// 5. CTA Buttons: ripple effect
 // ──────────────────────────────────────────────
 (function () {
-  const btn = document.getElementById('downloadBtn');
-  if (!btn) return;
-  btn.addEventListener('click', function (e) {
-    e.preventDefault();
-    // Ripple
-    const ripple = document.createElement('span');
-    const rect = btn.getBoundingClientRect();
-    const size = Math.max(rect.width, rect.height);
-    ripple.style.cssText = `
-      position:absolute; border-radius:50%;
-      width:${size}px; height:${size}px;
-      left:${e.clientX - rect.left - size/2}px;
-      top:${e.clientY - rect.top - size/2}px;
-      background:rgba(255,255,255,0.35);
-      transform:scale(0); animation:rippleAnim 0.5s ease-out forwards;
-      pointer-events:none;
-    `;
-    btn.style.position = 'relative';
-    btn.style.overflow = 'hidden';
-    btn.appendChild(ripple);
-    setTimeout(() => ripple.remove(), 600);
-
-    // Simulate download feedback
-    const origText = btn.innerHTML;
-    btn.innerHTML = `<svg viewBox="0 0 24 24" fill="none" width="20" height="20"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg> 다운로드 준비 중...`;
-    setTimeout(() => { btn.innerHTML = origText; }, 2200);
+  const btns = document.querySelectorAll('.btn-cta');
+  btns.forEach(btn => {
+    btn.addEventListener('click', function (e) {
+      if (btn.getAttribute('href') === '#') {
+        e.preventDefault();
+      }
+      
+      // Ripple
+      const ripple = document.createElement('span');
+      const rect = btn.getBoundingClientRect();
+      const size = Math.max(rect.width, rect.height);
+      ripple.style.cssText = `
+        position:absolute; border-radius:50%;
+        width:${size}px; height:${size}px;
+        left:${e.clientX - rect.left - size/2}px;
+        top:${e.clientY - rect.top - size/2}px;
+        background:rgba(255,255,255,0.35);
+        transform:scale(0); animation:rippleAnim 0.5s ease-out forwards;
+        pointer-events:none;
+      `;
+      btn.style.position = 'relative';
+      btn.style.overflow = 'hidden';
+      btn.appendChild(ripple);
+      setTimeout(() => ripple.remove(), 600);
+    });
   });
 
   // Inject ripple keyframe
