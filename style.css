@@ -708,15 +708,115 @@ img {
   transform: translateX(0);
 }
 
-.legacy-link,
-.renewal-link {
-  display: block;
+/* Renewal System Image Hover Overlay */
+.renewal-img-container {
+  position: relative;
 }
 
-.legacy-link img:hover {
-  transform: scale(1.03);
+.renewal-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(15, 23, 42, 0.85); /* Semi-transparent dark overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 5;
+}
+
+.renewal-img-container:hover .renewal-overlay {
+  opacity: 1;
+  visibility: visible;
+}
+
+.renewal-img-container:hover img {
+  transform: scale(1.04);
+}
+
+.btn-renewal-connect {
+  background: var(--white);
+  color: var(--navy);
+  padding: 12px 22px;
+  border-radius: var(--radius-sm);
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transform: translateY(15px);
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1), background var(--transition);
+}
+
+.renewal-img-container:hover .btn-renewal-connect {
+  transform: translateY(0);
+}
+
+.btn-renewal-connect:hover {
+  background: var(--gray-100);
+  transform: translateY(-2px);
+}
+
+/* Legacy System Image Hover Overlay */
+.legacy-img-container {
+  position: relative;
+}
+
+.legacy-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(15, 23, 42, 0.85); /* Semi-transparent dark overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 5;
+}
+
+.legacy-img-container:hover .legacy-overlay {
+  opacity: 1;
+  visibility: visible;
+}
+
+.legacy-img-container:hover img {
+  transform: scale(1.04);
   filter: grayscale(0%) !important;
-  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.4) !important;
+}
+
+.btn-legacy-connect {
+  background: var(--white);
+  color: var(--navy);
+  padding: 12px 22px;
+  border-radius: var(--radius-sm);
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transform: translateY(15px);
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1), background var(--transition);
+}
+
+.legacy-img-container:hover .btn-legacy-connect {
+  transform: translateY(0);
+}
+
+.btn-legacy-connect:hover {
+  background: var(--gray-100);
+  transform: translateY(-2px);
 }
 
 .renewal-link img:hover {
@@ -804,6 +904,83 @@ img {
 
 .project-img.boongeo {
   background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+}
+
+/* Hover Overlay Style for Projects */
+.project-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(15, 32, 54, 0.85); /* Semi-transparent dark navy */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.35s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 5;
+}
+
+.project-img:hover .project-overlay {
+  opacity: 1;
+  visibility: visible;
+}
+
+.overlay-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 80%;
+  max-width: 180px;
+  transform: translateY(15px);
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.project-img:hover .overlay-buttons {
+  transform: translateY(0);
+}
+
+.btn-overlay {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 20px;
+  border-radius: var(--radius-sm);
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  transition: background var(--transition), transform var(--transition), box-shadow var(--transition);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* App Intro Button - White Accent */
+.btn-overlay.btn-intro {
+  background: var(--white);
+  color: var(--navy);
+  border: 1px solid var(--white);
+}
+
+.btn-overlay.btn-intro:hover {
+  background: var(--gray-100);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
+}
+
+/* App Download Button - Yellow Accent */
+.btn-overlay.btn-download-app {
+  background: var(--yellow);
+  color: var(--navy);
+  border: 1px solid var(--yellow);
+}
+
+.btn-overlay.btn-download-app:hover {
+  background: var(--yellow-hover);
+  border-color: var(--yellow-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(245, 197, 24, 0.3);
 }
 
 .phone-mockup {
